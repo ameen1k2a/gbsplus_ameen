@@ -52,11 +52,6 @@ class User_model extends CI_Model
 		return $query->num_rows();
 	}
 
-    /* public function insert_user($data) {
-        
-        return $this->db->insert('users', $data);
-    } */
-
 	public function insert_user($data) {
 		// Insert user data
 		if ($this->db->insert('users', $data)) {
